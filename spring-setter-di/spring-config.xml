@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="address" class="com.in60minutes.basic.Address">
+        <property name="city" value="Hyderabad"></property>
+        <property name="pinCode" value="500072"></property>
+    </bean>
+    <bean id="company" class="com.in60minutes.basic.Address">
+        <property name="company">
+            <list>
+                <value>Cognizent</value>
+                <value>Capgemini</value>
+            </list>
+        </property>
+    </bean>
+
+
+</beans>

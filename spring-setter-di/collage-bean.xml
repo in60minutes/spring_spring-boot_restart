@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="collageaddress" class="com.in60minutes.bothfiles.CollageAddress">
+        <property name="collageCity" value="Vizag"></property>
+        <property name="state" value="Andhra Pradesh"></property>
+    </bean>
+    <bean id="student" class="com.in60minutes.bothfiles.Student">
+        <property name="studentId" value="293"></property>
+        <property name="studentName" value="Raju"></property>
+        <property name="mobileNo" value="7382459573"></property>
+        <property name="collageAddress" ref="collageaddress"></property>
+    </bean>
+</beans>
